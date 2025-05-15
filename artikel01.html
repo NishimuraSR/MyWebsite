@@ -8,7 +8,7 @@
 </head>
 <body>
   <article class="detail-article">
-    <img src="img/artikel-kpop.jpg" alt="Web Development">
+    <img src="img/artikel-kpop.jpg" alt="Article-Kpop">
     <h1>Faktor di Balik Popularitas K-Pop dan Drama Korea</h1>
     <p>Dalam beberapa tahun terakhir, musik K-Pop dan drama Korea (K-Drama) telah menjadi bagian dari budaya populer global. Bukan hanya di Asia, tetapi juga di Eropa, Amerika, hingga Timur Tengah, kita bisa melihat penggemar fanatik yang mengikuti perkembangan dunia hiburan Korea dengan antusias. Tapi apa sebenarnya yang membuat K-Pop dan K-Drama begitu diminati?</p>
     
@@ -21,9 +21,29 @@
 <p>Tak dapat dipungkiri, popularitas budaya Korea juga berdampak pada aspek lain seperti fashion, gaya hidup, makanan, dan bahkan minat untuk belajar bahasa Korea. Ini menunjukkan bahwa K-Wave bukan hanya tren hiburan, melainkan sudah menjadi bagian dari gaya hidup modern di berbagai belahan dunia.</p>
 
 <p>Secara keseluruhan, K-Pop dan K-Drama berhasil menarik perhatian dunia karena konsistensi, kreativitas, dan kedekatan emosional yang dibangun antara pelaku industri dan penikmatnya. Fenomena ini menjadi bukti bahwa musik dan cerita dapat menjembatani budaya dan membawa orang dari berbagai latar belakang menjadi lebih terhubung.</p>
-    <a href="index.html" class="back-btn">← Kembali ke Artikel</a>
+
+<form class="form-komentar" onsubmit="tampilkanPesan(event)">
+  <label for="nama">Nama</label>
+  <input type="text" id="nama" name="nama" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="komentar">Komentar</label>
+  <textarea id="komentar" name="komentar" rows="4" required></textarea>
+
+  <button type="submit">Kirim</button>
+</form>
+
+<!-- Area untuk menampilkan pesan -->
+<p id="pesan-sukses" style="display: none; color: white; font-weight: bold; margin-top: 15px;">
+  Terima kasih! Komentar Anda telah dikirim.
+</p>
+
+    <a href="index.html" class="back-btn">← Kembali ke halaman sebelumnya</a>
   </article>
 
+ 
   <footer>
     <div class="container text-center">
         <div class="copyright">

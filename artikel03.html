@@ -8,14 +8,32 @@
 </head>
 <body>
   <article class="detail-article">
-    <img src="img/artikel-overthinking.webp" alt="Animasi Web">
+    <img src="img/artikel-overthinking.webp" alt="Article-Overthinking">
     <h1>Overthinking: Musuh Dalam Pikiran yang Sering Tak Disadari</h1>
     <p>Pernahkah kamu merasa kelelahan hanya karena terlalu banyak berpikir? Padahal, belum tentu apa yang kamu pikirkan itu benar-benar akan terjadi. Inilah yang disebut dengan overthinking — kebiasaan memikirkan sesuatu secara berlebihan hingga membuat kita cemas, takut, atau bahkan tidak bisa tidur.</p>
 
 <p>Overthinking seringkali muncul dari ketidakpastian atau rasa takut gagal. Kita terus mengulang skenario-skenario “bagaimana jika...” dalam pikiran kita, tanpa pernah menemukan ujungnya. Akibatnya, kita tidak hanya kehilangan waktu, tapi juga kedamaian batin. Kita jadi ragu mengambil keputusan, mudah stres, dan akhirnya stagnan di tempat.</p>
 
 <p>Untuk mengatasinya, kita perlu belajar menyadari kapan pikiran kita mulai berlebihan. Teknik sederhana seperti menulis jurnal, meditasi, atau berbicara dengan teman bisa sangat membantu. Ingatlah: berpikir itu penting, tapi terlalu banyak berpikir bisa jadi jebakan. Kadang, lebih baik bertindak dan belajar dari hasilnya — daripada diam dan terus dihantui oleh bayangan yang belum tentu nyata.</p>
-    <a href="index.html" class="back-btn">← Kembali ke Artikel</a>
+
+<form class="form-komentar" onsubmit="tampilkanPesan(event)">
+  <label for="nama">Nama</label>
+  <input type="text" id="nama" name="nama" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="komentar">Komentar</label>
+  <textarea id="komentar" name="komentar" rows="4" required></textarea>
+
+  <button type="submit">Kirim</button>
+</form>
+
+<!-- Area untuk menampilkan pesan -->
+<p id="pesan-sukses" style="display: none; color: white; font-weight: bold; margin-top: 15px;">
+  Terima kasih! Komentar Anda telah dikirim.
+</p>
+    <a href="index.html" class="back-btn">← Kembali ke halaman sebelumnya</a>
   </article>
 
   <footer>
@@ -24,7 +42,7 @@
             <p>&copy; 2025 Siti Rahmah. All Rights Reserved.</p>
         </div>
     </div>
-    
+
   <script src="artikel.js"></script>
 </body>
 </html>

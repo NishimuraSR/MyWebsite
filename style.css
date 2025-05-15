@@ -825,3 +825,46 @@ footer {
 .social-icons {
   margin-top: 15px; /* Tambahkan jarak atas */
 }
+/* ============================== */
+/* MEDIA QUERIES UNTUK RESPONSIF */
+/* ============================== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    padding: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text h2,
+  #typing-text {
+    font-size: 18px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .btn-letsgo {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* Buat semua gambar fleksibel secara default */
+img {
+  max-width: 100%;
+  height: auto;
+}

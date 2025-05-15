@@ -67,6 +67,56 @@ body {
   background: #e96d65;
 }
 
+.form-komentar {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fc;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-komentar label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-komentar input,
+.form-komentar textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-komentar input:focus,
+.form-komentar textarea:focus {
+  border-color: #6a5acd;
+  outline: none;
+  background-color: #fff;
+}
+
+.form-komentar button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #F79B89;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.form-komentar button:hover {
+  background-color: #e96d65;
+}
+
 /* --- Footer --- */
 footer {
   background-color: #2A3663; /* Warna latar footer */
