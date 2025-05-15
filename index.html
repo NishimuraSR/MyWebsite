@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <!-- Menentukan karakter encoding untuk halaman ini -->
+  <meta charset="UTF-8" />
+  <!-- Mengatur viewport untuk responsif, artinya halaman akan menyesuaikan dengan ukuran layar perangkat -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Menentukan judul halaman yang akan muncul di tab browser -->
+  <title>Profil Siti Rahmah</title>
+
+  <!-- Menyertakan file CSS Bootstrap dari CDN untuk desain responsif dan komponen UI -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Menyertakan Font Awesome untuk ikon sosial media -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Menyertakan file AOS (Animate on Scroll) untuk animasi saat menggulir halaman -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Menyertakan file CSS kustom untuk styling tambahan -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+  <!-- Navbar (Navigasi atas) -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-peach shadow-sm">
+    <div class="container">
+      <!-- Nama website yang muncul di navbar -->
+      <a class="navbar-brand text-white fw-bold" href="#">MyWebsite</a>
+      <!-- Tombol untuk menu navigasi yang akan muncul pada layar kecil -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Daftar menu navigasi -->
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#artikel">Article</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Galery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="Home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hello, I'm <span class="highlight">Siti Rahmah</span></h1>
+                <h2><span id="typing-text"></span></h2>
+                <p>I create stunning digital experiences that live on the web.</p>
+                <button class="btn-letsgo" onclick="showMessages()">Let's Go</button>
+
+                  <div class="hero-buttons">
+                    <a href="#Contact" class="btn primary">Get In Touch</a>
+                    <a href="#Galery" class="btn secondary">View My Work</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:tugassitirahmah@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/6285762841403" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/19GrMkJZER/" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/pjsra?igsh=djY0czdnMGV3Z2dl" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- Replace with your image URL -->
+                    <img src="img/Foto01.jpg" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#About">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+  <!-- About Section (Tentang Saya) -->
+  <section id="About" class="about-section" data-aos="fade-up">
+    <div class="container">
+      <!-- Judul untuk bagian "About" -->
+      <h2 class="text-center mb-5">ABOUT ME</h2>
+      <div class="about-content">
+        <!-- Kolom untuk foto -->
+        <div class="about-image">
+          <img src="img/Foto02.jpg" class="animasi-img" alt="Foto Siti Rahmah" />
+        </div>
+
+        <!-- Kolom untuk informasi pribadi -->
+        <div class="about-text">
+          <h3>Hi, I’m Siti Rahmah</h3>
+          <p><strong>NIM:</strong> 110123029</p>
+          <p><strong>Tempat, Tanggal Lahir:</strong> Nenassiam, 28 Januari 2005</p>
+          <p><strong>Alamat:</strong> Jalan Sekip No.52, Medan Petisah</p>
+          <!-- Deskripsi panjang tentang diri -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente doloribus fugiat. Aspernatur repudiandae consequatur est reiciendis, itaque impedit aut explicabo error numquam quas distinctio corporis rem qui magni excepturi nostrum atque esse ea corrupti officia maiores! Labore quam, iusto debitis provident enim unde dolorum ipsam laboriosam accusantium consequuntur? Voluptate!</p>
+        </div>
+        
+        <!-- Bagian Sertifikat -->
+        <section class="certificate-section">
+  <h2 class="text-center mb-5">My Certificate</h2>
+  <div class="certificate-box">
+    
+    <!-- Kartu Sertifikat 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" onclick="flipCard(this)">
+          <h3>Click to view CSS Certificate</h3>
+        </div>
+        <div class="flip-card-back">
+          <img src="img/Sertifikat-CSS.jpg" alt="Sertifikat CSS">
+        </div>
+      </div>
+    </div>
+
+    <!-- Kartu Sertifikat 2 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" onclick="flipCard(this)">
+          <h3>Click to view HTML Certificate</h3>
+        </div>
+        <div class="flip-card-back">
+          <img src="img/Sertifikat-HTML.jpg" alt="Sertifikat HTML">
+        </div>
+      </div>
+    </div>
+
+    <!-- Kartu Sertifikat 3 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" onclick="flipCard(this)">
+          <h3>Click to view Desktop Class Certificate</h3>
+        </div>
+        <div class="flip-card-back">
+          <img src="img/Sertifikat kelas-desktop.jpg" alt="Sertifikat Desktop">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      </div>
+    </div>
+  </section>
+
+  <!--section artikel-->
+ <section id="artikel">
+    <h2 class="section-title">Artikel</h2>
+
+    <div class="artikel-container">
+      <div class="artikel-card">
+        <img src="img/artikel-kpop.jpg" alt="artikel-kpop">
+        <h3 class="artikel-title">Faktor di Balik Popularitas K-Pop dan Drama Korea</h3>
+        <p class="artikel-preview">Web development adalah proses membangun dan memelihara situs web...Dalam beberapa tahun terakhir, musik K-Pop dan drama Korea (K-Drama) telah menjadi bagian dari budaya populer global. Bukan hanya di Asia, tetapi juga di Eropa, Amerika, hingga Timur Tengah, kita bisa melihat penggemar fanatik yang mengikuti perkembangan dunia hiburan Korea dengan antusias. Tapi apa sebenarnya yang membuat K-Pop dan K-Drama begitu diminati?.....</p>
+        <a href="artikel01.html" class="read-more-btn">Lihat Selengkapnya</a>
+      </div>
+
+      <div class="artikel-card">
+        <img src="img/artikel-metime.jpg" alt="metime">
+        <h3 class="artikel-title">Me Time: Kebutuhan yang Sering Diabaikan di Tengah Hidup yang Sibuk</h3>
+        <p class="artikel-preview">Di tengah rutinitas yang padat kuliah, kerja, tugas rumah, dan kewajiban sosial banyak orang melupakan satu hal penting: me time. Waktu untuk diri sendiri sering dianggap tidak produktif, bahkan egois. Padahal, justru dari me time-lah kita bisa mengisi ulang energi, mengenal diri lebih dalam, dan menjaga kesehatan mental.....</p>
+        <a href="artikel02.html" class="read-more-btn">Lihat Selengkapnya</a>
+      </div>
+
+      <div class="artikel-card">
+        <img src="img/artikel-overthinking.webp" alt="Animasi Web">
+        <h3 class="artikel-title">Overthinking: Musuh Dalam Pikiran yang Sering Tak Disadari</h3>
+        <p class="artikel-preview">Pernahkah kamu merasa kelelahan hanya karena terlalu banyak berpikir? Padahal, belum tentu apa yang kamu pikirkan itu benar-benar akan terjadi. Inilah yang disebut dengan overthinking — kebiasaan memikirkan sesuatu secara berlebihan hingga membuat kita cemas, takut, atau bahkan tidak bisa tidur....</p>
+        <a href="artikel03.html" class="read-more-btn">Lihat Selengkapnya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+
+  <section id="gallery">
+    <h2>My Galery</h2>
+<section class="slideshow-container">
+    <div class="slideshow">
+      <img id="slideshow-image" src="img/Rain.jpg" alt="Slideshow Gambar" />
+      <div class="slideshow-caption">
+        <h3 id="slideshow-title">Rain</h3>
+        <p id="slideshow-description">Hujan adalah simbol keindahan dalam kesunyian, membasuh dunia dan menyuburkan harapan, mengajarkan bahwa dalam setiap kejatuhan ada awal kehidupan baru.</p>
+      </div>
+    </div>
+
+    <div class="slideshow-buttons">
+      <button class="foto-btn" onclick="showSlide(0)">RAIN</button>
+      <button class="foto-btn" onclick="showSlide(1)">SEA</button>
+      <button class="foto-btn" onclick="showSlide(2)">SUNSET</button>
+      <button class="foto-btn" onclick="showSlide(3)">DENDELION</button>
+      <button class="foto-btn" onclick="showSlide(4)">MATCHA</button>
+      <button class="foto-btn" onclick="showSlide(5)">TIRAMISU CAKE</button>
+      <button class="foto-btn" onclick="showSlide(6)">JEPANG</button>
+      <button class="foto-btn" onclick="showSlide(7)">GROUPBAND KOREA ENHYPEN</button>
+    </div>
+  </section>
+  </section>
+  <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="highlight">Skills</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-text">
+                    <h3>My creative skills & experiences.</h3>
+                    <p>I've worked with a variety of technologies and frameworks to build responsive, user-friendly web applications. Below are some of my technical skills and expertise areas.</p>
+                </div>
+                <div class="skills-bars">
+                    <div class="skill-item" data-percent="95">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-percent="90">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-percent="85">
+                        <div class="skill-info">
+                            <span class="skill-name">React.js</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-percent="80">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-percent="75">
+                        <div class="skill-info">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <h3>Technologies I work with</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-sass"></i>
+                        <span>Sass</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Section Project -->
+  <section id="project" class="project-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-grid">
+      <div class="project-item" data-animate="fade-in">
+        <img src="img/web-portofolio.png" alt="Project 1" />
+        <h3>Project Satu</h3>
+        <p>Website portofolio pribadi dengan HTML, CSS, dan JavaScript.</p>
+      </div>
+      <div class="project-item" data-animate="fade-in" data-delay="200">
+        <img src="img/project02.jpeg" alt="Project 2" />
+        <h3>Project Dua</h3>
+        <p>Aplikasi to-do list dengan fitur drag-and-drop dan penyimpanan lokal.</p>
+      </div>
+      <div class="project-item" data-animate="fade-in" data-delay="400">
+        <img src="img/project03.jpg" alt="Project 3" />
+        <h3>Project Tiga</h3>
+        <p>Desain UI untuk aplikasi mobile menggunakan Figma dan Canva.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Kontak) -->
+  <section id="Contact" class="contact-section bg-light-peach" data-aos="fade-up">
+    <div class="container">
+      <!-- Judul untuk bagian kontak -->
+      <h2 class="text-center mb-4">Kontak Saya</h2>
+      <div class="row">
+        <!-- Info kontak -->
+        <div class="col-md-4 contact-info">
+          <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong><br> +628 5762 8414 03</p>
+          <p><i class="fas fa-envelope"></i> <strong>Email:</strong><br> tugassitirahmah@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong><br>
+            Jl.Sekip No52c, Medan Petisah, Sumatra Utara(tepat disamping apotek Karunia yang di map)
+          </p>
+          <!-- Ikon sosial media -->
+          <div class="social-icons mt-3" role="navigation" aria-label="Link media sosial">
+            <a href="https://www.instagram.com/pjsra?igsh=djY0czdnMGV3Z2dl" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/6285762841403" target="_blank" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:tugassitirahmah@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://maps.app.goo.gl/g6dAL2KEjtNEpQc19" target="_blank" aria-label="Lokasi">
+              <i class="fas fa-map-marker-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form kontak -->
+        <div class="col-md-4">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-peach">Kirim</button>
+          </form>
+        </div>
+
+        <!-- Peta lokasi -->
+        <div class="col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.87265953314667!2d98.66520061506894!3d3.596170884348866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131dea6f86c65%3A0xc540abd8dd13bc28!2sAPOTEK%20KARUNIA!5e0!3m2!1sid!2sid!4v1746252427525!5m2!1sid!2sid" width="120%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Bagian bawah halaman) -->
+  <footer>
+    <div class="container text-center">
+        <div class="copyright">
+            <p>&copy; 2025 Siti Rahmah. All Rights Reserved.</p>
+        </div>
+        <div class="back-to-top">
+            <a href="#Home"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </div>
+</footer>
+
+  <!-- JavaScript untuk Bootstrap dan AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="script.js"></script>
+  <script>
+    // Inisialisasi AOS (Animate on Scroll)
+    AOS.init({
+      duration: 1500, // durasi animasi
+      once: true // hanya animasi sekali
+    });
+  </script>
+</body>
+
+</html>

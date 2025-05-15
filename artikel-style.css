@@ -1,0 +1,76 @@
+body {
+  background-color: #dfe3c0;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a6b37f' fill-opacity='0.4'%3E%3Ccircle cx='60' cy='30' r='20'/%3E%3Ccircle cx='30' cy='90' r='10'/%3E%3Ccircle cx='90' cy='90' r='10'/%3E%3Cpath d='M60 40c-10 0-10 10-20 10s10 10 20 10 10-10 20-10-10-10-20-10z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 140px 140px;
+}
+
+
+body {
+  animation: bgScroll 30s linear infinite;
+  background-attachment: fixed;
+}
+
+@keyframes bgScroll {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 100px; }
+}
+
+.detail-article {
+  max-width: 800px;
+  margin: 60px auto;
+  background: #2A3663;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.detail-article.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.detail-article img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-article h1 {
+  margin-top: 0;
+  color: white;
+  font-size: 2em;
+}
+
+.detail-article p {
+  line-height: 1.7;
+  margin-bottom: 1.2em; /* Atau bisa pakai px, misalnya 20px */
+  color: white;
+  font-size: 1.1em;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #F79B89;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #e96d65;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #2A3663; /* Warna latar footer */
+  color: white; /* Warna teks */
+  padding: 20px 0; /* Padding */
+    text-align: center;
+}
